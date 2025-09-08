@@ -84,9 +84,9 @@ const OurStorySection = () => {
               </svg>
 
               <p className="mt-3 text-sm leading-6 sm:text-[15px]">
-                "Education is not preparation for life; education is life
-                itself. Our journey has been about creating an environment where
-                every student can discover their potential and shine."
+                Education is not preparation for life; education is life itself.
+                Our journey has been about creating an environment where every
+                student can discover their potential and shine.
               </p>
 
               <div className="mt-4 flex items-center gap-3">
