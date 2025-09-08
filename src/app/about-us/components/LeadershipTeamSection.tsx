@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type Member = {
   name: string;
@@ -50,10 +51,12 @@ const LeadershipTeamSection = () => {
               key={m.name}
               className="rounded-2xl border-1 border-slate-200 bg-white p-6 text-center"
             >
-              <img
+              <Image
                 src={m.avatar}
                 alt={m.name}
                 className="mx-auto h-20 w-20 rounded-full object-cover ring-4 ring-white shadow"
+                width={80}
+                height={80}
               />
               <div className="mt-4 text-[15px] font-semibold text-slate-900">
                 {m.name}

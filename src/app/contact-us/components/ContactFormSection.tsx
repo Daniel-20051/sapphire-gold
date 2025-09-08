@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Input = ({
   label,
@@ -31,7 +32,7 @@ const ContactFormSection = () => {
             </h3>
             <p className="mt-1 text-sm text-slate-500">
               Have a specific question or need assistance? Fill out the form
-              below and we'll get back to you within 24 hours.
+              below and we&apos;ll get back to you within 24 hours.
             </p>
 
             <form className="mt-5 space-y-4">
@@ -162,10 +163,12 @@ const ContactFormSection = () => {
                     aria-label={s.name}
                     className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-white/20 hover:bg-white/30 ring-1 ring-white/20"
                   >
-                    <img
+                    <Image
                       src={s.url}
                       alt={s.name}
                       className="h-4 w-4 brightness-0 invert"
+                      width={16}
+                      height={16}
                     />
                   </a>
                 ))}

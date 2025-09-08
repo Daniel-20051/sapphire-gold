@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const OurStorySection = () => {
   return (
@@ -22,9 +23,9 @@ const OurStorySection = () => {
               <p>
                 What began as a small community school with just 50 students and
                 a handful of dedicated teachers has blossomed into one of the
-                region's most respected educational institutions. Our journey to
-                the limelight wasn't overnight – it was built on decades of
-                unwavering commitment to excellence.
+                region&apos;s most respected educational institutions. Our
+                journey to the limelight wasn&apos;t overnight – it was built on
+                decades of unwavering commitment to excellence.
               </p>
               <p>
                 In the early years, we faced numerous challenges – limited
@@ -89,10 +90,12 @@ const OurStorySection = () => {
               </p>
 
               <div className="mt-4 flex items-center gap-3">
-                <img
+                <Image
                   src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah"
                   alt="Dr. Sarah Johnson avatar"
                   className="h-9 w-9 rounded-full border border-white/50"
+                  width={36}
+                  height={36}
                 />
                 <div>
                   <div className="text-sm font-semibold text-white">

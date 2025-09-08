@@ -33,6 +33,29 @@ function useCountUp(target: number, start: boolean, durationMs = 1400) {
   return value;
 }
 
+function AchievementStat({
+  label,
+  value,
+  suffix,
+  start,
+}: {
+  label: string;
+  value: number;
+  suffix?: string;
+  start: boolean;
+}) {
+  const current = useCountUp(value, start);
+  return (
+    <div className="space-y-1">
+      <div className="text-3xl font-extrabold tracking-tight">
+        {current}
+        {suffix}
+      </div>
+      <div className="text-xs sm:text-sm text-white/80">{label}</div>
+    </div>
+  );
+}
+
 export default function Achievements() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
@@ -63,20 +86,15 @@ export default function Achievements() {
           Numbers that reflect our commitment to excellence
         </p>
         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((s) => {
-            const current = useCountUp(s.value, visible);
-            return (
-              <div key={s.label} className="space-y-1">
-                <div className="text-3xl font-extrabold tracking-tight">
-                  {current}
-                  {s.suffix}
-                </div>
-                <div className="text-xs sm:text-sm text-white/80">
-                  {s.label}
-                </div>
-              </div>
-            );
-          })}
+          {stats.map((s) => (
+            <AchievementStat
+              key={s.label}
+              label={s.label}
+              value={s.value}
+              suffix={s.suffix}
+              start={visible}
+            />
+          ))}
         </div>
       </div>
     </section>

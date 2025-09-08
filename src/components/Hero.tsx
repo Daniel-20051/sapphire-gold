@@ -37,7 +37,7 @@ export default function Hero() {
           {/* Left text */}
           <div className="text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
-              Shaping Tomorrow's
+              Shaping Tomorrow&apos;s
               <br />
               Leaders Today
             </h1>

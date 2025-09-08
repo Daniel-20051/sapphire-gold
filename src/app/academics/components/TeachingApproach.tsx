@@ -96,8 +96,8 @@ export default function TeachingApproach() {
             Our Teaching Approach
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            We believe in personalized learning that adapts to each student's
-            unique needs and learning style.
+            We believe in personalized learning that adapts to each
+            student&apos;s unique needs and learning style.
           </p>
         </div>
 

@@ -27,9 +27,9 @@ const ContactHero = () => {
         </div>
 
         <p className="mt-6 max-w-3xl text-base leading-7 text-indigo-100 sm:text-lg">
-          We're here to help and answer any questions you might have. Reach out
-          to us through any of the methods below, and we'll get back to you as
-          soon as possible.
+          We&apos;re here to help and answer any questions you might have. Reach
+          out to us through any of the methods below, and we&apos;ll get back to
+          you as soon as possible.
         </p>
 
         <div className="mt-5 flex flex-wrap gap-3">

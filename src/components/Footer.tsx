@@ -70,7 +70,7 @@ export default function Footer() {
                 </div>
               </div>
               <p className="mt-4 text-sm text-slate-300 leading-6 max-w-sm">
-                Empowering minds, shaping futures, and building tomorrow's
+                Empowering minds, shaping futures, and building tomorrow&apos;s
                 leaders through innovative education and comprehensive academic
                 excellence.
               </p>

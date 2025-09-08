@@ -74,7 +74,7 @@ export default function WhyChoose() {
           </ul>
 
           {/* Right spotlight card */}
-          <div className="relative  isolate w-[35vw]">
+          <div className="relative  isolate w-full md:w-[35vw]">
             <div className="pointer-events-none absolute -inset-1 z-0 hidden sm:block">
               <div className="h-full w-full rounded-3xl bg-[#CCC8E8] rotate-5 " />
             </div>
@@ -95,7 +95,7 @@ export default function WhyChoose() {
                 <p className="mt-1 text-sm text-slate-600">
                   Experience our vibrant campus community where innovation meets{" "}
                   <br />
-                  tradition in creating tomorrow's leaders.
+                  tradition in creating tomorrow&apos;s leaders.
                 </p>
                 <button className="mt-4 inline-flex items-center gap-2 rounded-md bg-[#2b2c6b] text-white px-4 py-2 text-sm font-semibold hover:bg-[#232a6b]">
                   <svg
